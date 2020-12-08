@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .boxshadow-outset{
+            width:140px;
+            height:100px;
+            color: black;
+            font: bold 55px "微软雅黑";
+            box-shadow:5px 4px 6px  #666;
+            background-image:linear-gradient(to top left,red,rgba(143,255,255,0.5),violet);
+            text-shadow: 2px 2px 0 #E4F1FF;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .boxshadow-inset{
+            width:100px;
+            height:100px;
+            box-shadow:4px 4px 6px #666 inset;
+        }
+        .boxshadow-multi{
+            width:100px;
+            height:100px;
+            box-shadow:4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #33CC00 inset;
+        }
+    </style>
+</head>
+<body>
+<h2>外阴影</h2>
+<div class="boxshadow-outset">153232</div>
+<br />
+<h2>内阴影</h2>
+<div class="boxshadow-inset"></div>
+<br />
+<h2>多阴影</h2>
+<div class="boxshadow-multi"></div>
+</body>
+</html>

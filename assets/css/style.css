@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clear:after{
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.section-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.3);
+}
+.mod-header{
+    position: relative;
+    color: #fff;
+}
+.mod-header h1 {
+    width: 140px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.mod-header h1 a {
+    display: block;
+    width: 140px;
+    height: 31px;
+    margin-top: 14px;
+    line-height: 1000px;
+    overflow: hidden;
+    background-image: url("../img/logo@2x.png");
+    background-size: cover;
+}
+.mod-tab-list {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 0;
+    min-width: 845px;
+}
+.mod-tab-list ul {
+    float: right;
+}
+.mod-tab-list li {
+    float: left;
+    padding: 0 20px;
+    height: 64px;
+    line-height: 64px;
+}
+.mod-tab-list li a {
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+}
+.part-login {
+    height: 678.4px;
+    position: relative;
+}
+.mod-page-intro .intro-wrapper {
+    position: relative;
+    /*max-width: 20rem;*/
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+.part-login .intro-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.detail-wrapper {
+    position: absolute;
+    right: 24%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.detail-wrapper h2{
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 25.6px;
+}
+.detail-wrapper h3{
+    font-size: 28.8px;
+    color: #fff;
+    text-align: justify;
+    letter-spacing: 56px;
+}
+.intro-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: url(../img/part-login@2x.jpg) 0 0 no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.part-stable {
+    height: 544px;
+}
+.mod-page-intro .intro-wrapper {
+    position: relative;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+.part-stable .intro-detail {
+    position: absolute;
+    left: 57.5%;
+    bottom: 0;
+    opacity: 0;
+    transition: all 1.5s ease .2s;
+}
+.part-stable .title {
+    color: #000;
+    font-size: 44px;
+}
+.part-stable .intro-detail h4 {
+    margin-bottom: 32px;
+}
+.part-stable .intro-detail h4 span {
+    display: block;
+    margin-top: 8px;
+}
+.part-stable .intro-pic {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+.part-stable .intro-pic .column-pic {
+    float: right;
+    margin-left: 22px;
+    width: 87px;
+    height: 1202px;
+    opacity: 1;
+}
+.part-stable .intro-pic .column-1{
+    background: url("../img/tubiao1@2x.png") 0 -100px;
+    background-size: 88px 1202px;
+    transition: all 1.5s ease .2s;
+}
+.part-stable .intro-pic .column-2{
+    background: url("../img/tubiao2@2x.png") 0 -200px;
+    background-size: 88px 1202px;
+    transition: all 1.5s ease .2s;
+}
+.part-stable .intro-pic .column-3{
+    background: url("../img/tubiao3@2x.png") 0 -300px;
+    background-size: 88px 1202px;
+    transition: all 1.5s ease .2s;
+}
+.part-stable .intro-pic .column-4{
+    background: url("../img/tubiao4@2x.png") 0 -400px;
+    background-size: 88px 1202px;
+    transition: all 1.5s ease .2s;
+}
+.part-stable .intro-pic .column-5{
+    background: url("../img/tubiao5@2x.png") 0 -500px;
+    background-size: 88px 1202px;
+    transition: all 1.5s ease .2s;
+}
+.active .right{
+    position: absolute;
+    left: 57.5%;
+    top: 50%;
+    opacity: 1;
+    min-width: 288px;
+    transform: translateY(-50%);
+}
+.active .part-stable .intro-pic .column-1,.active .part-stable .intro-pic .column-2,.active .part-stable .intro-pic .column-3,.active .part-stable .intro-pic .column-4{
+    background-position: 0 0;
+}
+.tyg{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+.four{
+    position: absolute;
+    width: 100%;
+    background: #2980ff;
+    height: 520px;
+    left: 100%;
+    transition: all 1.5s ease .2s;
+}
+.four .right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url("../img/slide-1.png") no-repeat  ;
+    background-size: cover;
+    left:100%;
+    transition: position 1.5s ease .2s;
+}
+.four .left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.four .left .nr{
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    text-align: center;
+    transition: all 1.5s ease .2s;
+}
+.four .left .nr h4{
+    font-size: 44px;
+    margin-bottom: 32px;
+}
+.four .left .nr p{
+    font-size: 20px;
+}
+.active .four{
+    left: 0;
+}
+.active .four .right{
+    left:50%;
+}
+.active .four .left .nr{
+    top: 30%;
+    left: 10%;
+}
